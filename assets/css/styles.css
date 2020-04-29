@@ -1,0 +1,573 @@
+.navbar {
+  z-index: 900;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+}
+
+a.navbar-item {
+  cursor: pointer;
+  color: #0a0a0a;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.button.is-primary {
+  background-color: #9f6649;
+  border-color: transparent;
+  color: #fff;
+}
+.is-black{
+  background-color: #0a0a0a;
+  border-color: transparent;
+  color: #fff;
+  opacity: 90%;
+}
+
+.container {
+  margin-left: 30%;
+}
+
+.button-div {
+  
+}
+
+.yes {
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 15x;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.yes span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.yes span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.yes:hover span {
+  padding-right: 25px;
+}
+
+.yes:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.card-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.row .col.s2 {
+  width: 32.666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row {
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* margin-bottom: 20px; */
+  /* float: left; */
+  /* border-spacing: initial; */
+  /* margin: 0 auto; */
+  margin-bottom: 20%;
+}
+
+/* Styling for the card ratings */
+.cardrating {
+
+width: 300px;
+height: 200px;
+}
+
+.cardrating:hover {
+cursor: pointer;
+box-shadow: 0px 0px 10px black;
+}
+
+.cardrating 
+  { transition: all .2s ease-in-out; }
+
+.cardrating:hover
+  { transform: scale(1.07); }
+/* <---------------------------------------> */
+.card .card-image .card-title {
+  color: #fafafa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 24px;
+  font-family: sans-serif;
+  font-weight: 900;
+ 
+}
+
+/* FOOD CARDS */
+
+#italianCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+  
+}
+#italianCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+  
+}
+#chineseCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+#chineseCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+}
+
+#mexicanCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+
+}
+
+#mexicanCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+  
+}
+
+#mideastCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+
+#mideastCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+}
+
+#southCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+
+}
+
+#southCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+  
+}
+#japCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+#japCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+}
+
+
+
+/* <------------------DIETARY PREFERENCE CARD---------------> */
+
+
+#veganCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+  
+}
+#veganCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+  
+}
+#ketoCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+#ketoCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+}
+
+#pescCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+
+}
+
+#pescCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+  
+}
+
+#vegetarianCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+
+#vegetarianCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+}
+
+#glutenCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+
+}
+
+#glutenCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+  
+}
+#preferanceCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+#preferanceCard:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.07); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <____________________________________________> */
+card .card-image {
+  position: relative;
+  height: 200px;
+  /* object-fit: cover; */
+  /* width: 238px; */
+}
+
+
+.cards-for-genre {
+  cursor: pointer;
+}
+
+#actionCard { 
+  transition: all .2s ease-in-out;
+ }
+
+#actionCard:hover {
+   transform: scale(1.07);
+   }
+
+#comedyCard { 
+    transition: all .2s ease-in-out; 
+  }
+
+#comedyCard:hover { 
+  transform: scale(1.07);
+ }
+
+#horrorCard { 
+  transition: all .2s ease-in-out; 
+}
+#horrorCard:hover { 
+  transform: scale(1.07);
+ }
+
+#dramaCard {
+   transition: all .2s ease-in-out; 
+  }
+
+#dramaCard:hover {
+   transform: scale(1.07); 
+  }
+#scifiCard {
+   transition: all .2s ease-in-out; 
+  }
+#scifiCard:hover { 
+  transform: scale(1.07);
+ }
+
+#familyCard { 
+  transition: all .2s ease-in-out; 
+}
+
+#familyCard:hover { 
+  transform: scale(1.07); 
+}
+
+
+/* select rating styles */
+
+
+
+span.msg,
+span.choose {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit
+}
+.container {
+  width: 500px;
+  margin: 50px auto 0;
+  text-align: center
+}
+
+/*Styling Selections for food*/
+
+
+
+/* .food-button {
+  background-color: #000000;
+  border-color: transparent;
+  color: #fff;
+} */
+
+.food-question {
+  margin: 0 auto;
+}
+
+.food-button2{
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 15x;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  height: 60px;
+  margin: 5px;
+  margin-bottom: 320px;
+}
+
+
+
+
+
+
+.food-button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.food-button2 span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.food-button2:hover span {
+  padding-right: 25px;
+}
+
+.food-button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+.food-button{
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 15x;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  height: 60px;
+  margin: 5px;
+  margin-bottom: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.food-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.food-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.food-button:hover span {
+  padding-right: 25px;
+}
+
+.food-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.diet-question{
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+.alcohol-question {
+margin: 0 auto;
+}
+
+.alcohol-question {
+  /* margin-bottom: 40%; */
+}
+
+
+.alcohol-heading {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.button-wrapper {
+  /* margin-left: 55px; */
+}
+
+
+
+/* this is buttons for alcohol questions */
+
+.alcohol-question {
+  /* margin-left: 30%; */
+}
+
+.newButton {
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 15x;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.newButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.newButton span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.newButton:hover span {
+  padding-right: 25px;
+}
+
+.newButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.resultcolumn {
+  background-color: black;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.results-page h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.results-page h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.results-page img {
+  margin: 20px 0;
+}
+
+.results-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.hero.is-success {
+  background-color: rgb(56, 56, 56);
+  color: #fff;
+}
+
+.hero-body {
+  padding-top: 0rem
+}

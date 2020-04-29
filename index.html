@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Candlelight</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+<section id="section" class="hero is-success is-fullheight background">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Would You like to watch a movie tonight?
+        </h1>
+
+        <div class="placeholder"></div>
+
+        <div class="button-div">
+          <button data-movieQuest="yes" class="button yes moviebutton is-black style-for-food">
+            <span>Yes</span>
+          </button>
+          <button data-movieQuest="no" class="button yes moviebutton is-black style-for-food">
+            <span>No</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- create buttons with dropdown for genre  -->
+    <div class="row cards-for-genre">
+      <div id="actionCard" class="col s2 movieGenre">
+        <div class="card">
+          <div class="card-image movieType" data-movieID="28">
+            <img src="https://media3.giphy.com/media/LFC7Dc1GOTu4E/giphy.gif" />
+            <span class="card-title">Action</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="comedyCard" class="col s2 movieGenre">
+        <div class="card">
+          <div class="card-image movieType" data-movieID="35">
+            <img src="https://media.giphy.com/media/3owzVXpeycnguWQvfy/giphy.gif" />
+            <span class="card-title">Comedy</span>
+          </div>
+        </div>
+      </div>
+      <div id="horrorCard" class="col s2 movieGenre">
+        <div class="card">
+          <div class="card-image movieType" data-movieID="27">
+            <img src="https://media.giphy.com/media/w5Lp7RmMcMTRe/200.gif" />
+            <span class="card-title">Horror</span>
+          </div>
+        </div>
+      </div>
+      <div id="dramaCard" class="col s2 movieGenre">
+        <div class="card">
+          <div class="card-image movieType" data-movieID="18">
+            <img src="https://media3.giphy.com/media/ldhFX6H89fZtK/source.gif" />
+            <span class="card-title">Drama</span>
+          </div>
+        </div>
+      </div>
+      <div id="scifiCard" class="col s2 movieGenre">
+        <div class="card">
+          <div class="card-image movieType" data-movieID="878">
+            <img src="https://media0.giphy.com/media/q97q8DviQEzXG/giphy.gif" />
+            <span class="card-title">Sci-Fi</span>
+          </div>
+        </div>
+      </div>
+      <div id="familyCard" class="col s2 movieGenre  ">
+        <div class="card">
+          <div class="card-image movieType" data-movieID="10751">
+            <img src="https://media1.tenor.com/images/197e84975ef7213dc936cee5f0dd73b6/tenor.gif?itemid=7569786" />
+            <span class="card-title">Family</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                       <!-- cards for rating -->
+
+
+    <div class="cards-for-rating row">
+         <div class="cardrating card s4">
+        <div class="card-image movieCert" data-movieCert="PG">
+          <img src="https://cybra.com/wp-content/uploads/2019/06/dark-gray-background-soft-fifteen-shades-of-grey-smooth-background-with-the-addition-of-a-bit-of-noise_bvu2c-5qtg_thumbnail-full01.png" />
+          <span class="card-title">PG</span>
+        </div>
+      </div>
+
+   
+
+      <div class="cardrating card s4">
+        <div class="card-image movieCert" data-movieCert="PG-13">
+          <img src="https://cybra.com/wp-content/uploads/2019/06/dark-gray-background-soft-fifteen-shades-of-grey-smooth-background-with-the-addition-of-a-bit-of-noise_bvu2c-5qtg_thumbnail-full01.png" />
+          <span class="card-title">PG-13</span>
+        </div>
+      </div>
+      
+
+   
+
+      <div class="cardrating card s4">
+        <div class="card-image movieCert" data-movieCert="R">
+          <img src="https://cybra.com/wp-content/uploads/2019/06/dark-gray-background-soft-fifteen-shades-of-grey-smooth-background-with-the-addition-of-a-bit-of-noise_bvu2c-5qtg_thumbnail-full01.png" />
+          <span class="card-title">R</span>
+        </div>
+      </div>
+    </div>
+  
+  
+  <!-- cards for cuisines -->
+
+
+  <!-- cards for cuisines -->
+
+
+  <div class="food-question">
+    <button class="food-button is-black foodQuest" data-foodQuest = "yes"><span class="btn-span">Yes</span></button>
+    <button class="food-button is-black foodQuest" data-foodQuest = "no"><span class="btn-span">No</span></button>
+  </div>
+
+
+  <div class="row cards-for-cuisines">
+    <h1 class="diet-question">
+      What cuisine would you like to make:
+    </h1>
+    <div class="col s2">
+      <div class="card">
+        <div id="italianCard" class="card-image foodCuisine" data-foodCuisine="italian">
+          <img src="https://img.freepik.com/free-photo/penne-pasta_1339-932.jpg?size=626&ext=jpg" />
+          <span class="card-title">Italian</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card">
+        <div id="chineseCard" class="card-image foodCuisine" data-foodCuisine="chinese">
+          <img src="https://p0.pikrepo.com/preview/903/659/fried-rice-with-mixed-vegetables-on-white-ceramic-plate.jpg" />
+          <span class="card-title">Chinese</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card">
+        <div id="mexicanCard" class="card-image foodCuisine" data-foodCuisine="mexican">
+          <img src="https://p0.pikrepo.com/preview/18/23/chicken-tacos-cheese-sweetcorn.jpg" />
+          <span class="card-title">Mexican</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card">
+        <div id="mideastCard" class="card-image foodCuisine" data-foodCuisine="middle eastern">
+          <img src="https://cdn.vox-cdn.com/thumbor/TDKiyx4Tg9f3ZrQR9Yg5erQh_tM=/0x0:2880x2304/1200x900/filters:focal(1214x1074:1674x1534)/cdn.vox-cdn.com/uploads/chorus_image/image/59012145/CaspianGrille_KabobKabobPlatters1_2880x2304.6.jpg" />
+          <span class="card-title">Middle Eastern</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card">
+        <div id="southCard" class="card-image foodCuisine" data-foodCuisine="southern">
+          <img src="https://www.wheretraveler.com/sites/default/files/styles/promoted_image/public/SoulFood_c-Jennifer%20Woodard%20Maderazo-Flickr_1.jpg?itok=YhXatT_V&timestamp=1452722539" />
+          <span class="card-title">Southern</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card">
+        <div id="japCard"class="card-image foodCuisine" data-foodCuisine="japanese">
+          <img src="https://cdn.pixabay.com/photo/2017/04/04/00/36/japanese-food-2199962_960_720.jpg" />
+          <span class="card-title">Japanese</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- dietary restrictions -->
+ 
+  <div class="row cards-for-diets">
+
+
+    <h1 class="diet-question">
+      Any dietary restrictions: 
+    </h1>
+    <div class="col s2">
+      <div class="card">
+        <div id="preferanceCard" class="card-image foodDiet" data-foodDiet="">
+          <img src="assets/images/no preference.jpg" />
+          <span class="card-title">No Preference</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card">
+        <div id="veganCard" class="card-image foodDiet" data-foodDiet="vegan">
+          <img src="https://p0.pxfuel.com/preview/344/674/482/quinoa-salad-vegetarian-diet.jpg" />
+          <span class="card-title">Vegan</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card ketoCard">
+        <div id="ketoCard"class="card-image foodDiet" data-foodDiet="dairy free">
+          <img src="https://i2.wp.com/thewoodenskillet.com/wp-content/uploads/2019/03/Dairy-Free-Dijon-Chicken-5.jpg?resize=600%2C900&ssl=1" />
+          <span class="card-title">Dairy Free</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card ">
+        <div id="pescCard" class="card-image foodDiet" data-foodDiet="pescetarian">
+          <img src="https://p0.pxfuel.com/preview/891/457/303/salmon-fish-scampi-fried.jpg" />
+          <span class="card-title">Pesceterian</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card ">
+        <div id="vegetarianCard" class="card-image foodDiet" data-foodDiet="vegetarian">
+          <img src="https://p0.piqsels.com/preview/503/434/508/salad-spinach-cashew-food.jpg" />
+          <span class="card-title">Vegetarian</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s2">
+      <div class="card">
+        <div id="glutenCard" class="card-image foodDiet" data-foodDiet="gluten free">
+          <img src="https://live.staticflickr.com/65535/48887422827_34dc3e6987_b.jpg" />
+          <span class="card-title">Gluten Free</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="alcohol-question">
+    <h1 class="alcohol-heading">
+      Would you like a drink?
+    </h1><br>
+    <div class="button-wrapper">
+      <button id="buttonAlcohol-1" class="food-button2 is-black" data-foodQuest = "yes"><span class="btn-span">Yes</span></button>
+      <button id="buttonAlcohol-2" class="food-button2 is-black" data-foodQuest = "no"><span class="btn-span">No</span></button>
+      <!-- <button id="buttonAlcohol-1" class="button is-black style-for-alcohol">
+        <span>Yes</span>
+      </button>
+      <button  class="button is-black style-for-alcohol">
+        <span>No</span>
+      </button> -->
+    </div>
+  </div>
+
+  <div class ="row cards-for-alcohol">
+
+    <div class="cardrating card s4">
+      <div class="card-image alcoholPref" data-alcohol="alcoholic">
+        <img src="assets/images/alcoholic.jfif" />
+        <span class="card-title">Alcoholic</span>
+      </div>
+    </div>
+    <div class="cardrating card s4">
+      <div class="card-image alcoholPref" data-alcohol="nonalcoholic">
+        <img src="assets/images/apple-926456_1280.png" />
+        <span class="card-title">Non-alcoholic</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- RESULTS PAGE -->
+
+<div class="results-page">
+  <div class="results-wrapper">
+  <div class="columns">
+    <div class="column foodz is-one-third resultcolumn">
+      <h1>Bon appetit!</h1>
+    </div>
+    <div class="column is-one-third resultcolumn moviez">
+      <h1>Enjoy your movie!</h1>
+    </div>
+    <div class="column is-one-third resultcolumn drinkz">
+      <h1>Drink? Yes please!</h1>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  </section>
+
+  
+
+  <script src="assets/js/movies.js"></script>
+  <script src="assets/js/food.js"></script>
+  <script src="assets/js/drinks.js"></script>
+
+</body>
+
+</html>
