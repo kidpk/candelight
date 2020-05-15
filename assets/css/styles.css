@@ -29,9 +29,6 @@ a.navbar-item {
   margin-left: 30%;
 }
 
-.button-div {
-  
-}
 
 .yes {
   border-radius: 4px;
@@ -558,18 +555,18 @@ margin: 0 auto;
   font-family: sans-serif;
   font-size: 40px;
 }
-
+/* 
 .button-wrapper {
   /* margin-left: 55px; */
-}
+/* } */
 
 
 
 /* this is buttons for alcohol questions */
 
-.alcohol-question {
+/* .alcohol-question { */
   /* margin-left: 30%; */
-}
+/* }  */
 
 .newButton {
   border-radius: 4px;
