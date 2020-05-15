@@ -548,7 +548,8 @@ margin: 0 auto;
 }
 
 .alcohol-question {
-  /* margin-bottom: 40%; */
+
+  margin-bottom: 5%;
 }
 
 
@@ -639,5 +640,6 @@ margin: 0 auto;
 }
 
 .hero-body {
-  padding-top: 0rem
+  padding-top: 0rem;
+  align-items: flex-end;
 }
