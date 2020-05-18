@@ -52,6 +52,7 @@ And append the poster to the main movie display
 Future ideas:
 Add the perfect flowers
 
-Original Github repo: : https://github.com/Adeelshaukat1/our-night :
-Redesigned by Joshua Joyce
+Original Github repo:
+	https://github.com/Adeelshaukat1/our-night
+	Redesigned by Joshua Joyce
 
