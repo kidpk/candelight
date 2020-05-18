@@ -31,7 +31,7 @@ When user hits search it will hide Movie options,
 And append the poster to the main Movie display
 
 In sidebar we have a dinner search with options :
-	DIetary Choice
+	Dietary Choice
 	Cuisine
 	Intolerances/Allergies
 When user hits search it will hide dinner options,
@@ -52,7 +52,6 @@ And append the poster to the main movie display
 Future ideas:
 Add the perfect flowers
 
-Original Github repo:
-	https://github.com/Adeelshaukat1/our-night
-	Redesigned by Joshua Joyce
+[Original Github repo](https://github.com/Adeelshaukat1/our-night)
+
 
